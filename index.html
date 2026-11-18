@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="SCTD: Spatially Conditioned Trajectory Diffusion">
+    <title>SCTD | Spatially Conditioned Trajectory Diffusion</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="acronym" id="acronym"></p>
+        <h1 id="title"></h1>
+        <div class="authors" id="authors" aria-label="Authors"></div>
+        <p class="affiliations" id="affiliations"></p>
+        <p class="contact" id="contact"></p>
+      </header>
+
+      <nav class="resources" id="resources" aria-label="Project resources"></nav>
+
+      <section class="citation" id="citation" aria-labelledby="citation-title" hidden>
+        <h2 id="citation-title">BibTeX</h2>
+        <div class="citation-row">
+          <pre><code id="bibtex"></code></pre>
+          <button type="button" id="copy-citation">Copy</button>
+        </div>
+        <p class="copy-status" id="copy-status" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

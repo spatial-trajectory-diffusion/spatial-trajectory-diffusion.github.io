@@ -1,0 +1,162 @@
+:root {
+  color: #333;
+  background: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+.page {
+  width: min(100% - 2rem, 920px);
+  margin: 0 auto;
+  padding: 5rem 0 6rem;
+}
+
+.hero {
+  text-align: center;
+}
+
+.acronym {
+  margin: 0 0 1rem;
+  color: #666;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+h1 {
+  max-width: 860px;
+  margin: 0 auto 1.4rem;
+  color: #333;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.authors {
+  font-size: 1.15rem;
+}
+
+a {
+  color: #1769aa;
+}
+
+.authors a {
+  text-decoration: none;
+}
+
+.authors a:hover,
+.authors a:focus-visible {
+  text-decoration: underline;
+}
+
+.affiliations,
+.contact {
+  margin: 0.35rem 0 0;
+  color: #666;
+}
+
+.resources {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 3rem 0 0;
+}
+
+.resource-button {
+  padding: 0.65rem 1.2rem;
+  border-radius: 999px;
+  background: #333;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.resource-button:hover,
+.resource-button:focus-visible {
+  background: #1769aa;
+}
+
+.citation {
+  margin-top: 5rem;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  color: #333;
+  font-size: 1.35rem;
+}
+
+.citation-row {
+  position: relative;
+}
+
+pre {
+  overflow-x: auto;
+  margin: 0;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background: #f2f2f2;
+  color: #333;
+  font: 0.9rem/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+#copy-citation {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid #777;
+  border-radius: 0.3rem;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  font: inherit;
+}
+
+#copy-citation:hover,
+#copy-citation:focus-visible {
+  border-color: #1769aa;
+  color: #1769aa;
+}
+
+.copy-status {
+  min-height: 1.5em;
+  margin: 0.4rem 0 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+:focus-visible {
+  outline: 3px solid #1769aa;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 3rem 0 4rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 11vw, 3rem);
+  }
+
+  .authors {
+    font-size: 1rem;
+  }
+
+  .citation {
+    margin-top: 4rem;
+  }
+}
