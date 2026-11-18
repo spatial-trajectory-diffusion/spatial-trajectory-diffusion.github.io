@@ -33,10 +33,12 @@ const resourceLabels = {
   dataset: "Dataset"
 };
 const resources = document.getElementById("resources");
+
 Object.entries(config.resources).forEach(([key, url]) => {
-  if (!url) return;
+  const trimmedUrl = typeof url === "string" ? url.trim() : "";
+  if (!trimmedUrl) return;
   const link = document.createElement("a");
-  link.href = url;
+  link.href = trimmedUrl;
   link.textContent = resourceLabels[key];
   link.className = "resource-button";
   resources.append(link);
